@@ -56,40 +56,6 @@ h1 {
 	font-size: 20px;
 }
 
-#popup-layer {
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;	
-	
-	z-index: 100;
-	display: flex;
-	flex-flow: column nowrap;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
-}
-
-pre {
-	box-sizing: border-box;
-	background: white;
-	border: 2px solid red;
-	color: red;
-	padding: 1em;
-	white-space: pre-wrap;
-}
-
-#stderr {
-	border: 1px solid red;
-	padding: 1rem;
-	max-width: 80%;
-	
-	color: red;
-	font-weight: bold;
-	font-size: 16px;
-}
-
 #toolbar {
 	box-sizing: border-box;
 	width: 100%;
@@ -100,7 +66,7 @@ pre {
 	padding: 8px;
 }
 
-#toolbar button, #toolbar select {
+#toolbar button {
 	border: 1px solid white;
 	background: black;
 	color: white;
@@ -117,15 +83,6 @@ pre {
 	transform: scale(90%);
 }
 
-iframe {
-	box-sizing: border-box;
-	width: 60rem;
-	height: 30rem;
-	background: white;
-	color: black;
-	width: 750px;
-}
-
 #output {
 	padding: 0.5rem;
 	box-sizing: border-box;
@@ -134,6 +91,12 @@ iframe {
 	color: black;
 	height: 20rem;
 	overflow: scroll;
+}
+
+#output pre {
+	display: block;
+	margin: 0;
+	padding: 0;
 }
 
 #output .error {

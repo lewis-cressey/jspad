@@ -27,8 +27,8 @@ function clear() {
 }
 
 function print(...args) {
-	const line = document.createElement("div")
-	line.textContent = args.join(" ")
+	const line = document.createElement("pre")
+	line.textContent += args.join(" ")
 	outputElement.append(line)
 	line.scrollIntoView()
 	return line
